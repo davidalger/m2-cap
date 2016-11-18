@@ -1,0 +1,10 @@
+# Load DSL and set up stages
+require 'capistrano/setup'
+
+# Include deployment tasks
+require 'capistrano/magento2/deploy'
+require 'capistrano/magento2/pending'
+require 'capistrano/magento2/notifier'
+
+# Load custom tasks from `lib/capistrano/tasks` if you have any defined
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
