@@ -2,19 +2,34 @@
 
 set -e
 
-patch_version="$1"
-if [[ "$patch_version" == "" ]]; then
-    echo "Usage: setup-patch-version.sh <version>"
+branch_name="$1"
+patch_version="$2"
+
+if [[ "$branch_name" == "" ]]; then
+    echo "Usage: setup-patch-version.sh <branch> <version>"
     exit -1
 fi
 
-if [[ ! -f composer.json ]]; then
+if [[ "$patch_version" == "" ]]; then
+    echo "Usage: setup-patch-version.sh <branch> <version>"
+    exit -1
+fi
+
+if [[ ! -f README.md ]]; then
     echo "Please run this from the repo root!"
     exit -1
 fi
 
-echo "==> requiring version $patch_version"
-composer require magento/product-community-edition "$patch_version" --no-update
+git checkout $branch_name
+
+magento_edition=ce
+magento_product_pkg="$(grep magento/product composer.json | cut -d\" -f2)"
+if [[ "$magento_product_pkg" == "magento/product-enterprise-edition" ]]; then
+    magento_edition=ee
+fi
+
+echo "==> requiring version $magento_edition-$patch_version"
+composer require "$magento_product_pkg" "$patch_version" --no-update
 
 echo "==> updating composer.lock file"
 exit_code=0
@@ -29,6 +44,12 @@ rm -rf vendor
 echo "==> changed files"
 git status -s
 
-echo "==> committing $patch_version"
-git commit -am "Magento $patch_version"
-git tag "$patch_version"
+echo "==> committing $magento_edition-$patch_version"
+if [[ "$magento_edition" == "ee" ]]; then
+    git commit -am "Magento EE $patch_version update"
+else
+    git commit -am "Magento CE $patch_version update"
+fi
+git tag "$magento_edition-$patch_version"
+
+git checkout master
