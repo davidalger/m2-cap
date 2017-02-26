@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "magento/product-enterprise-edition": "2.0.2",
+        "magento/product-enterprise-edition": "2.0.3",
         "composer/composer": "@alpha"
     },
     "require-dev": {
