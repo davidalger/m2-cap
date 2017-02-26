@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8782a1e19b252abe8c027233e987867e",
-    "content-hash": "2efec2acd678af0e3dab872ea5234bde",
+    "hash": "b6d429fb9f40fd613f3804317e05a6ae",
+    "content-hash": "0b96647ba81c86041bf5c04ec03e0786",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -294,12 +294,12 @@
         },
         {
             "name": "magento/framework",
-            "version": "100.0.8",
+            "version": "100.0.9",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.8.0.zip",
+                "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.9.0.zip",
                 "reference": null,
-                "shasum": "4a560ce4a54a5dd93bfdf0da684b9c9815270057"
+                "shasum": "28405343ce6c52ce61ee746ccc2643134c9b8388"
             },
             "require": {
                 "ext-curl": "*",
@@ -590,12 +590,12 @@
         },
         {
             "name": "magento/magento2-base",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.6.0.zip",
+                "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.7.0.zip",
                 "reference": null,
-                "shasum": "2cbc57a9cba85c2507e3fec7edadeb3ad795d532"
+                "shasum": "4e41e7412889a796c2a76e44264280e462daa514"
             },
             "require": {
                 "braintree/braintree_php": "2.39.0",
@@ -4667,12 +4667,12 @@
         },
         {
             "name": "magento/product-community-edition",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.6.0.zip",
+                "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.7.0.zip",
                 "reference": null,
-                "shasum": "e1856ebd6bdb9b0e42546f8176b6f471fc4431b9"
+                "shasum": "4585cc9cfa2915d9bd5da59129e2355f187a851f"
             },
             "require": {
                 "braintree/braintree_php": "2.39.0",
@@ -4695,7 +4695,7 @@
                 "ext-zip": "*",
                 "lib-libxml": "*",
                 "magento/composer": "~1.0.0",
-                "magento/framework": "100.0.8",
+                "magento/framework": "100.0.9",
                 "magento/language-de_de": "100.0.5",
                 "magento/language-en_us": "100.0.5",
                 "magento/language-es_es": "100.0.5",
@@ -4704,7 +4704,7 @@
                 "magento/language-pt_br": "100.0.5",
                 "magento/language-zh_hans_cn": "100.0.5",
                 "magento/magento-composer-installer": "*",
-                "magento/magento2-base": "2.0.6",
+                "magento/magento2-base": "2.0.7",
                 "magento/module-admin-notification": "100.0.5",
                 "magento/module-advanced-pricing-import-export": "100.0.6",
                 "magento/module-authorization": "100.0.5",
