@@ -6,12 +6,12 @@ branch_name="$1"
 patch_version="$2"
 
 if [[ "$branch_name" == "" ]]; then
-    echo "Usage: setup-patch-version.sh <branch> <version>"
+    echo "Usage: update-release-branch.sh <branch> <version>"
     exit -1
 fi
 
 if [[ "$patch_version" == "" ]]; then
-    echo "Usage: setup-patch-version.sh <branch> <version>"
+    echo "Usage: update-release-branch.sh <branch> <version>"
     exit -1
 fi
 
