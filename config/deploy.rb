@@ -12,3 +12,4 @@ set :branch, ENV['BRANCH']
 # set :magento_deploy_production, false
 # set :magento_deploy_maintenance, false
 set :magento_deploy_themes, ['Magento/blank', 'Magento/backend']
+set :magento_deploy_jobs, 6
