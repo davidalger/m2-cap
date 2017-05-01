@@ -45,3 +45,13 @@ This is a test configuration for use in development of the [capistrano-magento2]
 To update a release branch with new composer information for new patch versions, run the following script for every new version on each release branch.
 
     ./scripts/update-release-branch.sh ce-2.1 2.1.5
+
+## Easy Testing
+
+1. Make sure you've configured bundler to use local override for capistrano-magento2 git repo
+
+        bundle config local.capistrano-magento2 /server/tools/capistrano-magento2/
+
+2. Use the following string in the `Gemfile`
+
+        gem 'capistrano-magento2', :github => 'davidalger/capistrano-magento2', :branch => 'develop'
