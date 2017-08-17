@@ -24,21 +24,37 @@ This is a test configuration for use in development of the [capistrano-magento2]
 
 ## M2 Release Branch Setup
 
-    git checkout --orphan ce-2.1
-    composer create-project magento/project-community-edition --no-scripts --no-install \
-        --repository-url=https://repo.magento.com/ ./m2/ 2.1.0
+    m_edition=ce
+    m_package=magento/project-community-edition
+    m_ver=2.2.0-rc20
+    m_branch="$m_edition-$(echo $m_ver | cut -d. -f1-2)"
+    
+    git checkout --orphan $m_branch
+    git reset --hard
+    
+    composer create-project $m_package --no-scripts --no-install --repository-url=https://repo.magento.com/ ./m2/ $m_ver
+    
     mv m2/* ./
     mv m2/.gitignore ./
-    git commit -m "Added Magento CE 2.1.0"
+    rmdir m2/
+    git add .
+    git commit -m "Added Magento $(echo "$m_edition" | tr '[:lower:]' '[:upper:]') $m_ver"
+    
+    mkdir -p app/etc
     cp /sites/m2shared/app/etc/config.php app/etc/
+    git add -f app/etc/config.php
     git commit -m "Added app config"
+    
     composer install -q --no-scripts
     git add composer.lock
-    rm -rf vendor/
+    rm -rf vendor/ update/
     git commit -m "Added composer.lock"
-    git tag ce-2.1.0;
-    git push --set-upstream origin ce-2.1
+    
+    git tag $m_edition-$m_ver;
+    git push --set-upstream origin $m_branch
     git push --tags
+    
+    git checkout master
 
 ## M2 Release Branch Update
 
