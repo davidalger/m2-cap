@@ -9,6 +9,7 @@ set :format_options, command_output: :stderr
 set :deploy_to, '/home/vagrant/sites/m2cap.demo'
 set :branch, ENV['BRANCH']
 
+set :magento_deploy_pending_warn, false
 # set :magento_deploy_production, false
 # set :magento_deploy_maintenance, false
 set :magento_deploy_themes, ['Magento/blank', 'Magento/backend']
