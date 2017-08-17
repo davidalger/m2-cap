@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "420a64a1699fbcd73a86b66fe4bb7428",
-    "content-hash": "3e04ac1e7eb4edfa98b0f8cf02788209",
+    "hash": "c63a47d0656395b95239ccf7c1e824dc",
+    "content-hash": "02d959ef8fd37e8424305adcc040bb8e",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -424,12 +424,12 @@
         },
         {
             "name": "magento/framework",
-            "version": "100.0.16",
+            "version": "100.0.17",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.16.0.zip",
+                "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.17.0.zip",
                 "reference": null,
-                "shasum": "ad01fcfa6fa0ce5f8f9c9a104397d11757ab4a99"
+                "shasum": "6b590cd67ed3fbdef277e91d8cf416c2873e1b8f"
             },
             "require": {
                 "ext-curl": "*",
@@ -722,12 +722,12 @@
         },
         {
             "name": "magento/magento2-base",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.14.0.zip",
+                "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.15.0.zip",
                 "reference": null,
-                "shasum": "22ee398cc230322f4401d218cd021b679f944395"
+                "shasum": "ac46c9fe4023afc577c208ea8d444bb2f2a1e453"
             },
             "require": {
                 "braintree/braintree_php": "2.39.0",
@@ -3473,12 +3473,12 @@
         },
         {
             "name": "magento/module-paypal",
-            "version": "100.0.9",
+            "version": "100.0.10",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/module-paypal/magento-module-paypal-100.0.9.0.zip",
+                "url": "https://repo.magento.com/archives/magento/module-paypal/magento-module-paypal-100.0.10.0.zip",
                 "reference": null,
-                "shasum": "1d0a83a1b381c29f40c50eb9f6286a4ecb5c9456"
+                "shasum": "fac4ced759104b49390de2b6f24552613dea5723"
             },
             "require": {
                 "lib-libxml": "*",
@@ -4843,12 +4843,12 @@
         },
         {
             "name": "magento/product-community-edition",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.14.0.zip",
+                "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.15.0.zip",
                 "reference": null,
-                "shasum": "9376bf9f870ce247983bb781ac05206da384b59a"
+                "shasum": "4f2e78410406bd4a80174987277b766a020592c4"
             },
             "require": {
                 "braintree/braintree_php": "2.39.0",
@@ -4871,7 +4871,7 @@
                 "ext-zip": "*",
                 "lib-libxml": "*",
                 "magento/composer": "~1.0.0",
-                "magento/framework": "100.0.16",
+                "magento/framework": "100.0.17",
                 "magento/language-de_de": "100.0.6",
                 "magento/language-en_us": "100.0.6",
                 "magento/language-es_es": "100.0.6",
@@ -4880,7 +4880,7 @@
                 "magento/language-pt_br": "100.0.6",
                 "magento/language-zh_hans_cn": "100.0.6",
                 "magento/magento-composer-installer": "*",
-                "magento/magento2-base": "2.0.14",
+                "magento/magento2-base": "2.0.15",
                 "magento/module-admin-notification": "100.0.6",
                 "magento/module-advanced-pricing-import-export": "100.0.7",
                 "magento/module-authorization": "100.0.6",
@@ -4943,7 +4943,7 @@
                 "magento/module-offline-shipping": "100.0.6",
                 "magento/module-page-cache": "100.0.8",
                 "magento/module-payment": "100.0.11",
-                "magento/module-paypal": "100.0.9",
+                "magento/module-paypal": "100.0.10",
                 "magento/module-persistent": "100.0.6",
                 "magento/module-product-alert": "100.0.7",
                 "magento/module-product-video": "100.0.9",
