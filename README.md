@@ -38,6 +38,7 @@ This is a test configuration for use in development of the [capistrano-magento2]
     mv m2/.gitignore ./
     rmdir m2/
     git add .
+    git reset artifacts
     git commit -m "Added Magento $(echo "$m_edition" | tr '[:lower:]' '[:upper:]') $m_ver"
     
     mkdir -p app/etc
@@ -47,13 +48,13 @@ This is a test configuration for use in development of the [capistrano-magento2]
     
     composer install -q --no-scripts
     git add composer.lock
-    rm -rf vendor/ update/
+    rm -rf vendor/
     git commit -m "Added composer.lock"
     
     git tag $m_edition-$m_ver;
-    git push --set-upstream origin $m_branch
-    git push --tags
     
+    git push --set-upstream origin $m_branch
+    git push --tags    
     git checkout master
 
 ## M2 Release Branch Update
