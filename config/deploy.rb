@@ -13,4 +13,5 @@ set :magento_deploy_pending_warn, false
 # set :magento_deploy_production, false
 # set :magento_deploy_maintenance, false
 set :magento_deploy_themes, ['Magento/blank', 'Magento/backend']
+set :magento_deploy_languages, ['en_US', 'en_GB']
 set :magento_deploy_jobs, 6

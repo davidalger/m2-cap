@@ -22,7 +22,7 @@ return array (
     array (
       'indexer' => 
       array (
-        'host' => 'dev-db',
+        'host' => 'localhost',
         'dbname' => 'm2_demo',
         'username' => 'root',
         'password' => '',
@@ -34,7 +34,7 @@ return array (
       ),
       'default' => 
       array (
-        'host' => 'dev-db',
+        'host' => 'localhost',
         'dbname' => 'm2_demo',
         'username' => 'root',
         'password' => '',

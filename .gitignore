@@ -1,1 +1,4 @@
 log/*.log
+artifacts/env.php
+artifacts/env.*.php
+!artifacts/env.devenv.php

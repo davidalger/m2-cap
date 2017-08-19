@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/davidalger/capistrano-magento2.git
-  revision: bcde340d03b17a27a0d1f77410cee5c2b1c4cde2
+  revision: c5b28164d397825238ec433cad040b88d8c4a2a6
   branch: develop
   specs:
-    capistrano-magento2 (0.6.6)
+    capistrano-magento2 (0.7.0)
       capistrano (~> 3.1)
 
 GEM
