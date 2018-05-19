@@ -21,6 +21,7 @@ if [[ ! -f README.md ]]; then
 fi
 
 git checkout $branch_name
+git pull
 
 magento_edition=ce
 magento_product_pkg="$(grep magento/product composer.json | cut -d\" -f2)"
