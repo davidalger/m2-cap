@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/davidalger/capistrano-magento2.git
-  revision: c5b28164d397825238ec433cad040b88d8c4a2a6
-  branch: develop
+  revision: c034c39b0b7938e2a6a9e18ca3fef91f696b32cb
+  branch: feature/zero-down-deployment
   specs:
-    capistrano-magento2 (0.7.0)
+    capistrano-magento2 (0.8.0)
       capistrano (~> 3.1)
 
 GEM
@@ -35,4 +35,4 @@ DEPENDENCIES
   terminal-notifier
 
 BUNDLED WITH
-   1.15.3
+   1.16.1
