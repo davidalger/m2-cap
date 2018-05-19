@@ -7,7 +7,7 @@
         "proprietary"
     ],
     "require": {
-        "magento/product-enterprise-edition": "2.2.3",
+        "magento/product-enterprise-edition": "2.2.4",
         "composer/composer": "@alpha"
     },
     "require-dev": {
