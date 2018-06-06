@@ -1,7 +1,5 @@
 
 before 'deploy:starting', 'deploy:branch_check'
-# before 'deploy:pending:log', 'deploy:branch_check'
-
 namespace :deploy do
   task :branch_check do
     branch = fetch(:branch)

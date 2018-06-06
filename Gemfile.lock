@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/davidalger/capistrano-magento2.git
-  revision: d6d06275c8c6526410e9e0cb2814a9a08a15b918
+  revision: b272c361b33cac7b0cabd8f179d4cd88835e73d3
   branch: develop
   specs:
-    capistrano-magento2 (0.8.0)
+    capistrano-magento2 (0.8.1)
       capistrano (~> 3.1)
 
 GEM
@@ -23,7 +23,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
     rake (12.3.1)
-    sshkit (1.16.0)
+    sshkit (1.16.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     terminal-notifier (2.0.0)

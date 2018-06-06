@@ -5,6 +5,7 @@ require 'capistrano/setup'
 require 'capistrano/magento2/deploy'
 require 'capistrano/magento2/pending'
 require 'capistrano/magento2/notifier'
+require 'capistrano/magento2/cachetool'
 
 # Load Git plugin
 require "capistrano/scm/git"

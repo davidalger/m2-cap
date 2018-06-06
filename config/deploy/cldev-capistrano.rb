@@ -1,5 +1,6 @@
 role :app, %w{
-  www-data@capistrano-magento2.cldev.net
+  www-data@capistrano-web1.cldev.net
+  www-data@capistrano-web2.cldev.net
 }
 
 set :deploy_to, '/var/www/html'

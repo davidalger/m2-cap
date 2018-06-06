@@ -4,7 +4,7 @@ lock '~> 3.7'
 set :application, 'm2cap_demo'
 set :repo_url, 'git@github.com:davidalger/m2-cap.git'
 set :keep_releases, 1
-set :format_options, command_output: :stderr
+# set :format_options, command_output: :stderr
 
 set :deploy_to, '/home/vagrant/sites/m2cap.demo'
 set :branch, ENV['BRANCH']
